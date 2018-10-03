@@ -8,25 +8,25 @@ public class Driver {
 
     System.out.println(acct.deposit(499.99));
     System.out.println(acct);
-    //should print 1234567890 1499.99
+    //should print true, 1234567890 1499.99
 
     System.out.println(acct.deposit(-10.0));
     System.out.println(acct);
-    //output should be unchanged
+    //should print false, 1234567890 1499.99
 
     acct.setPassword("fortnite");
 
     System.out.println(acct.withdraw(1255.94));
     System.out.println(acct);
-    //should print 1234567890 244.05
+    //should print true, 1234567890 244.05
 
     System.out.println(acct.withdraw(-0.01));
     System.out.println(acct);
-    //should print 1234567890 244.05
+    //should print false, 1234567890 244.05
 
     System.out.println(acct.withdraw(255.94));
     System.out.println(acct);
-    //should print 1234567890 244.05
+    //should print false, 1234567890 244.05
 
   }
 }
