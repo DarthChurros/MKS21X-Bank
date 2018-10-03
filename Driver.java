@@ -1,4 +1,4 @@
-public Driver {
+public class Driver {
   public static void main(String[] args) {
     BankAccount acct = new BankAccount(1000.0, 1234567890, "seven");
     //constructor that takes balance, account number, and setPassword
