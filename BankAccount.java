@@ -27,6 +27,14 @@ public class BankAccount {
     return true;
   }
 
+  public boolean withdraw(double amt) {
+    if (amt < 0 || amt > balance) {
+      return false;
+    }
+    balance -= amt;
+    return true;
+  }
+
   public String toString() {
     return accountID + "\t" + balance;
   }
