@@ -23,7 +23,7 @@ public class BankAccount {
 
   public boolean deposit(double amt) {
     if (amt < 0) {
-      return false
+      return false;
     }
     balance += amt;
     return true;
