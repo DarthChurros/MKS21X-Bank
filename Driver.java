@@ -3,7 +3,7 @@ public class Driver {
     BankAccount acct = new BankAccount(1000.0, 1234567890, "seven");
     //constructor that takes balance, account number, and setPassword
 
-    System.out.println("Account " + acct.getAccountID + " has a balance of " + acct.getBalance);
+    System.out.println("Account " + acct.getAccountID() + " has a balance of " + acct.getBalance());
     //should print Account 1234567890 has a balance of 1000.0
 
     System.out.println(acct.deposit(499.99));
