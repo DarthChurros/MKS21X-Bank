@@ -42,7 +42,7 @@ public class BankAccount {
   }
 
   private boolean authenticate(String password) {
-    return (this.password == password);
+    return (this.password.equals(password));
   }
 
   public String toString() {
